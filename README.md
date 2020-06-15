@@ -8,7 +8,7 @@
 * Programa **simples** em JS que cria uma assinatura de email baseado em um modelo SVG feito por mim.
 * Uma UI *igualmente simples* feita em Bootstrap.
 
-#### F.A.Q <h4>
+## F.A.Q <h2>
 
 Question  | Answer
 --------- | ------
