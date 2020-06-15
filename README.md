@@ -13,4 +13,4 @@
 Question  | Answer
 --------- | ------
 How can I use it? | just open it at github pages, its **very** simple
-Why is everything in another language? I cant Understand :( | well I am brazilian, and this was made for my friends at <titanci.com.br>
+Why is everything in another language? I cant Understand :( | well I am brazilian, and this was made for some fellows at [TITAN](https://titanci.com.br) . But the code is commented so there's that.
