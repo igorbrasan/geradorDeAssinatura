@@ -9,7 +9,11 @@
         <title> GeradorDeAssinaturas </title> 
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        
+        <script src="gerador.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+       
     </head>
 
     <body style="background-color: grey;">
@@ -53,31 +57,55 @@
                         <div class="input-group-prepend">
                           <span class="input-group-text">Nome e sobrenome</span>
                         </div>
-                        <input type="text" placeholder="Igor" aria-label="Primeiro nome" class="form-control"><!--INPUT FIELD 1-->
-                        <input type="text" placeholder="Reis" aria-label="sobrenome" class="form-control"><!--INPUT FIELD 2-->
+                        <input type="text" placeholder="Igor" id="username" aria-label="Primeiro nome" class="form-control"><!--INPUT FIELD 1-->
+                        <input type="text" placeholder="Reis" id="surname" aria-label="sobrenome" class="form-control"><!--INPUT FIELD 2-->
                       </div>
-                      <p class="card-text">Inclua quantos sobrenomes quiser, mas lembre-se que é o que ficará na sua assinatura!</p>
-                      <a href="#" class="btn btn-primary">Enviar</a>
+                    </br>
+                      <p class="card-text">Inclua quantos sobrenomes quiser, mas recomendo que use apenas um.</p>
+                      
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">Cargo</span>
+                        </div>
+                        <input type="text" placeholder="Diretor de Comunicação" id="job" aria-label="First name" class="form-control">
+                      </div>
+                    </br>
+                    <p class="card-ttext">Não se preocupe se errar. É só fazer denovo!</p>
+                    <button type="button" onclick="adicionarValor()" class="btn btn-primary">Enviar</button>  <a href="#" class="btn btn-secondary">Voltar ao início</a>
                     </div>
                   </div>
             </div>
         </div>
-        <!--END OF INPUT SECTION-->
+      </br>
 
-        
-        
+ <!--END OF INPUT SECTION-->
 
-            <footer class="mastfoot mt-auto" style="text-align: center;color: lightyellow;">
+ <div class="container-sm" id="resultado">
+  <div class="row justify-content-center" style="margin-top: 15rem;margin-bottom: 5rem;">
+          <div class="card">
+            <div id="dadosDeUsuario" class="card-header"></div>
+            <ul class="list-group list-group-flush" style="text-align: center;">
+              <h5>Código-fonte:</h5>
+              <li class="list-group-item" style="max-width: 40rem;">
+                <code id="codigoFonte"></code> 
+              </li>
+            </ul>
+          </div>
+        </div>
+ </div>
+
+        <hr />
+
+            <footer id= 'creditos' class="mastfoot mt-auto" style="text-align: center;color: lightyellow;">
             <div class="inner">
               <p>Página feita para <a href="https://titanci.com.br/" style="color:lightcyan;">TITAN</a>, by <a href="https://arkroshex.github.io/"style="color:lightcyan;">Igor Reis</a>.</p>
             </div>
           </footer>
+        <hr />
 
 
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        
     </body>
 
 
