@@ -2,7 +2,7 @@
   
 ### Signature Generator <h3>
 
-<https://arkroshex.github.io/GeradorDeAssinatura/>
+<https://arkroshex.github.io/geradorDeAssinatura/>
   
   
 * **Simple** JS program wich generates a e-mail signature, based on a model, made by myself.
