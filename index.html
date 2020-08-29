@@ -73,7 +73,7 @@
           </div>
           </br>
           <p class="card-ttext">Não se preocupe se errar. É só fazer denovo!</p>
-          <a href="#resultado" onclick="adicionarValor()" class="btn btn-primary">Enviar</a> 
+          <a href="#resultado" onclick="adicionarValor()" class="btn btn-primary">Enviar</a>
           <a href="#" class="btn btn-secondary">Voltar ao início</a>
         </div>
       </div>
@@ -84,13 +84,29 @@
   <!--END OF INPUT SECTION-->
 
   <div class="container-sm" id="resultado"></div>
+  <div class="row justify-content-center" style="margin-top: 15rem;margin-bottom: 5rem;">
+    <div class="card">
+        <div id="dadosDeUsuario" class="card-header"></div>
+        <ul class="list-group list-group-flush" style="text-align: center;">
+            <p>
+                <h5>Código-fonte:</h5>
+            </p>
+            <li class="list-group-item" style="max-width: 40rem;">
+                <textarea name="CaixaResultado" id="codigoFonte" cols="60" rows="3" style=""></textarea>
+            </li>
+            <li class="list-group-item">
+                <a href="" onclick="copiar()" class="btn btn-primary">Copiar o texto</a>
+            </li>
+        </ul>
+    </div>
+</div>
 
   <hr />
 
   <footer id='creditos' class="mastfoot mt-auto">
     <div class="inner">
-      <p class="blu">Página feita para 
-        <a class="blu" id="titan" href="https://titanci.com.br/">TITAN</a>, by 
+      <p class="blu">Página feita para
+        <a class="blu" id="titan" href="https://titanci.com.br/">TITAN</a>, by
         <a class="blu" id="igor" href="https://github.com/Arkroshex">Igor Reis</a>.</p>
     </div>
   </footer>

@@ -37,3 +37,8 @@ h3 {
     text-transform: uppercase;
     font-family: 'Times New Roman', Times, serif;
 }
+
+textarea{
+    font-family: monospace; 
+    font-size: smaller;
+}
