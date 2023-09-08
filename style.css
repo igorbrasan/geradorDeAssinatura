@@ -1,0 +1,39 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body.groovy {
+    scroll-behavior: smooth;
+    background-color: gray;   
+}
+
+#topo {
+    text-align: left;
+    margin-top: 5rem;
+}
+
+h3 {
+    height: auto;
+    font-weight: 800;
+}
+
+#dados{
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+    padding-top: 10rem;
+}
+
+#creditos{
+    text-align: center; 
+    color: lightyellow;
+}
+
+.blu, #igor, #titan{
+    color: #00ffff;
+    
+}
+
+#igor:hover{
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
